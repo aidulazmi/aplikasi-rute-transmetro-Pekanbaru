@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                style="@style/headerText"
+                android:text="Informasi Supir"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/id_rute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/nameImageView1"
+                    android:src="@drawable/ic_card_membership_black_24dp"
+                    style="@style/profileDetailsImage"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/nameTextView1"
+                    android:text="ID Supir"
+                    android:layout_toRightOf="@id/nameImageView1"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:id="@+id/txt_id"
+                    android:text="ID"
+                    android:layout_toRightOf="@id/nameImageView1"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/nameImageView"
+                    android:src="@drawable/ic_username"
+                    style="@style/profileDetailsImage"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:text="Username"
+                    android:layout_toRightOf="@id/nameImageView"
+                style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:id="@+id/txt_username1"
+                    android:text="Username"
+                    android:layout_toRightOf="@id/nameImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/emailImageView"
+                    android:src="@drawable/ic_email"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Email"
+                    android:layout_toRightOf="@id/emailImageView"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:id="@+id/txt_email1"
+                    android:text="AWSYSTEK@Gmail.com"
+                    android:layout_toRightOf="@id/emailImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/namalengkap"
+                    android:src="@drawable/ic_name"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Nama Lengkap"
+                    android:layout_toRightOf="@id/namalengkap"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:id="@+id/txt_nm_lengkap"
+                    android:text="AWSYSTEK"
+                    android:layout_toRightOf="@id/namalengkap"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/Alamat"
+                    android:src="@drawable/ic_address"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Alamat"
+                    android:layout_toRightOf="@id/Alamat"
+                    style="@style/profileDetailsTextMain" />
+
+                <TextView
+                    android:id="@+id/txt_alamat"
+                    android:text="Jl.xxxx"
+                    android:layout_toRightOf="@id/Alamat"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/mobileImageView"
+                    android:src="@drawable/ic_mobile"
+                    style="@style/profileDetailsImage" />
+
+                <TextView
+                    android:text="Nomor Hp"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    style="@style/profileDetailsTextMain"/>
+
+                <TextView
+                    android:id="@+id/txt_no_hp"
+                    android:text="+91-8129999999"
+                    android:layout_toRightOf="@id/mobileImageView"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/namakoridor"
+                    android:src="@drawable/ic_terminal"
+                    style="@style/profileDetailsImage"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:text="Koridor"
+                    android:layout_toRightOf="@id/namakoridor"
+                    style="@style/profileDetailsTextMain"/>
+
+                <TextView
+                    android:id="@+id/txt_nm_koridor"
+                    android:text="+91-8129999999"
+                    android:layout_toRightOf="@id/namakoridor"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/platn"
+                    android:src="@drawable/ic_directions_bus_black_24dp"
+                    style="@style/profileDetailsImage"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:text="Nomor Polisi"
+                    android:layout_toRightOf="@id/platn"
+                    style="@style/profileDetailsTextMain"/>
+
+                <TextView
+                    android:id="@+id/txt_platn"
+                    android:text="BM 8888 KK"
+                    android:layout_toRightOf="@id/platn"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+            <View style="@style/proifleDetailsView" />
+            <RelativeLayout style="@style/profileDetailsLayout">
+                <ImageView
+                    android:id="@+id/tujuan"
+                    android:src="@drawable/ic_map_black_24dp"
+                    style="@style/profileDetailsImage"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <TextView
+                    android:text="Rute"
+                    android:layout_toRightOf="@id/tujuan"
+                    style="@style/profileDetailsTextMain"/>
+
+                <TextView
+                    android:id="@+id/txt_tujuan"
+                    android:layout_marginTop="17dp"
+                    android:text="BM 8888 KK"
+                    android:layout_toRightOf="@id/tujuan"
+                    style="@style/profileDetailsMiniText" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btn_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_button"
+                        android:text="Login"
+                        android:textColor="@android:color/white"
+                        android:drawableLeft="@drawable/ic_sign"
+                        android:padding="10dp"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-condensed"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/proifleDetailsView" />
+
+        </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

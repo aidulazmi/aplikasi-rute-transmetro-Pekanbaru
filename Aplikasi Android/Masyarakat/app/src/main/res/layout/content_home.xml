@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:gl="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home"
+    tools:showIn="@layout/app_bar_home"
+    style="@style/parent.contentLayout"
+    android:background="#00000000">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="GO \nTransmetro\nPekanbaru"
+                    style="@style/viewParent.headerText"
+                    android:layout_gravity="bottom"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hero"
+                    android:adjustViewBounds="true" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            android:background="@drawable/home_gradient_maths"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img_halte"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home"
+                                style="@style/homeCardImage"/>
+
+                            <TextView
+                                android:id="@+id/txt_halte"
+                                android:text="Halte"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <net.colindodd.gradientlayout.GradientRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            gl:end_color="@color/gradientLightBlue"
+                            gl:start_color="@color/gradientLightOrange2"
+                            gl:orientation="LEFT_RIGHT"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img_contact"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/home_ic_chemistry"
+                                style="@style/homeCardImage"/>
+
+                            <TextView
+                                android:id="@+id/txt_contact"
+                                android:text="Contact Us"
+                                style="@style/viewParent.headerText.HomeCardTitle"
+                              />
+
+
+                        </net.colindodd.gradientlayout.GradientRelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <net.colindodd.gradientlayout.GradientRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            gl:start_color="@color/gradientLightBlue"
+                            gl:end_color="@color/gradientOrange"
+                            gl:orientation="LEFT_RIGHT"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img_koridor"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/koridor"
+                                style="@style/homeCardImage"/>
+
+                            <TextView
+                                android:id="@+id/txt_koridor"
+                                android:text="Koridor"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+
+                        </net.colindodd.gradientlayout.GradientRelativeLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="15dp"
+                        app:cardPreventCornerOverlap="true"
+                        android:layout_marginTop="10dp">
+
+                        <net.colindodd.gradientlayout.GradientRelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minHeight="100dp"
+                            gl:start_color="@color/gradientLightBlue"
+                            gl:end_color="@color/gradientOrange3"
+                            gl:orientation="LEFT_RIGHT"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/img_about_us"
+                                android:maxHeight="90dp"
+                                android:src="@drawable/aboutuas"
+                                style="@style/homeCardImage" />
+
+                            <TextView
+                                android:id="@+id/txt_about_us"
+                                android:text="Tentang Aplikasi"
+                                style="@style/viewParent.headerText.HomeCardTitle" />
+
+
+                        </net.colindodd.gradientlayout.GradientRelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

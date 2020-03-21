@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Sibusway_Masyarakat</string>
+    <string name="permission_dialog" />
+    <string name="go_to_permissions_settings" />
+
+    <!--dhalte-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="text_hint"><b>Cari Halte</b></string>
+    <string name="title_activity_buttonnavi">Buttonnavi</string>
+    <string name="title_home">Home</string>
+    <string name="title_bhalte">Halte</string>
+    <string name="title_bkoridor">Koridor</string>
+    <string name="title_activity_haltes">Map</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_maps">Map</string>
+    <!--dhalte-->
+</resources>
